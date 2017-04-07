@@ -50,7 +50,7 @@
                             <ul class="dropdown-menu" aria-labelledby="dLabel">
                                 <li><a href="{{url('Mahasiswa')}}">Data Mahasiswa</a></li>
                                 <li class="divider"></li>
-                                <li><a href="{{url('jadwal_matakuliah')}}">Jadwal Mahasiswa</a></li>
+                                <li><a href="{{url('jadwalmatakuliah')}}">Jadwal Mahasiswa</a></li>
                             </ul>
                     </li>
                     <li class="dropdown active">
@@ -90,9 +90,9 @@
        <nav class="navbar navbar-default navbar-fixed-bottom">
            <footer class="container">
                <!   please dont delete this >
-               created by <a href="http://facebook.com/triwasito">
+               <marquee>created by <a href="http://facebook.com/triwasito">
                <span><i class="fa fa-twitter" style="color: #1da1f2"></i>@tri</span></a> <!--/   please dont delete this    -->
-           </footer>
+           </marquee></footer>
        </nav>
 
        <script type="text/javascript" src="{{ asset('component/jquery/dist/jquery.min.js') }}"></script>
