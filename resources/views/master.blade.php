@@ -48,9 +48,9 @@
                     <li class="dropdown active">
                         <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Mahasiswa <span class="caret"></span></a>
                             <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                <li><a href="{{url('Mahasiswa')}}">Data Mahasiswa</a></li>
+                                <li><a href="{{url('mahasiswa')}}">Data Mahasiswa</a></li>
                                 <li class="divider"></li>
-                                <li><a href="{{url('jadwalmatakuliah')}}">Jadwal Mahasiswa</a></li>
+                                <li><a href="{{url('jadwal_matakuliah')}}">Jadwal Mahasiswa</a></li>
                             </ul>
                     </li>
                     <li class="dropdown active">

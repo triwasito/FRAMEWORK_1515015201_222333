@@ -4,15 +4,11 @@
 	<div class="panel-heading">
 		<strong><a href="{{url('jadwal_matakuliah')}}">
 		<i style="color: white;" class="fa text-default fa-chevron-left"></i>
-		</a>Tambah data jadwal_matakuliah</strong>
-	</div>
-		{!! Form::open(['url' => 'jadwal_matakuliah/simpan','class' => 'form-horizontal']) !!}
-        		@include('jadwal_matakuliah.form')
-	
-<!-- 
-{!! Form::open(['url'=>'mahasiswa/simpan','class'=>'form-horizontal']) !!}
-	@include('mahasiswa.form')
- -->		<div style="width: 100%;text-align: right;">
+		</a>Tambah Data Jadwal Mahasiswa</strong>
+	</div>		
+		{!! Form::open(['class' => 'form-horizontal','url' => 'jadwal_matakuliah/simpan']) !!}
+        		@include('jadwalmatakuliah.form', ['submit_text' => 'Tambah Data'])
+        		<div style="width: 100%;text-align: right;">
 			<button class="btn btn-primary">
 				<i class="fa fa-save"></i>Simpan
 			</button>

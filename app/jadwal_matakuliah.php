@@ -20,4 +20,46 @@ class jadwal_matakuliah extends Model
         public function ruangan(){
         return $this->belongsTo(ruangan::class);	
         }
+
+        public function getNamaMhsAttribute()
+        {
+           return $this->mahasiswa->nama; 
+        }
+
+        public function NimAttribute()
+        {
+           return $this->mahasiswa->nim; 
+        }
+
+        public function getNamaDsnAttribute()
+        {
+           return $this->dosen_matakuliah->dosen->nama; 
+        }
+
+         public function getNipDsnAttribute()
+        {
+           return $this->dosen_matakuliah->dosen->nip; 
+        }
+
+         public function getMatkulDsnAttribute()
+        {
+           return $this->dosen_matakuliah->matakuliah->title; 
+        }
+
+         public function getTitleruanganAttribute()
+        {
+           return $this->ruangan->title; 
+        }
+
+         public function listDosenMatakuliah_MahasiswaDanRuangan()
+        {
+            $out=[];
+            foreach ($this->all() as $jdwlMatkul) {
+                # code...
+                $out[$jdwlMatkul->id] ="{$jdwlMatkul->DosenMatakuliah->dosen->nama}
+                {$jdwlMatkul->mahasiswa->nama}
+                (Ruangan$jdwlMatkul->ruangan->title})";
+            }
+            return $out;
+        }
 }

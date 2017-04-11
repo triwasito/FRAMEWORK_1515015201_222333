@@ -3,7 +3,9 @@
 <div class="panel panel-default">
 	<div class="panel-default">
 			<strong> SELURUH DATA MATAKULIAH </strong>
-			<a href="{{url('matakuliah/tambah')}}" class="btn btn-xs btn-primary pull-right"> <i class="clearfix">matakuliah</i> </a>
+			<a href="{{url('matakuliah/tambah')}}" class="btn btn-xs btn-primary pull-right">
+			<i class="fa fa-plus"></i>Matakuliah</a>	
+			 <i class="clearfix">matakuliah</i> </a>
 		<div class="clearfix"></div>
 	</div>
 	<table class="table">

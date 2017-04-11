@@ -3,7 +3,9 @@
 <div class="panel panel-default">
 	<div class="panel-default">
 			<strong> Seluruh Data Ruangan </strong>
-			<a href="{{url('ruangan/tambah')}}" class="btn btn-xs btn-primary pull-right"> <i class="clearfix">ruangan</i> </a>	
+			<a href="{{url('ruangan/tambah')}}" class="btn btn-xs btn-primary pull-right">
+			<i class="fa fa-plus"></i>Ruangan</a>
+				
 		<div class="clearfix"></div>
 	</div>
 	<table class="table">

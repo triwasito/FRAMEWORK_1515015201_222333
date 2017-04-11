@@ -20,5 +20,30 @@ class dosen_matakuliah extends Model
     public function jadwal_matakuliah(){
     return $this->hasMany(jadwal_matakuliah::class,'dosen_matakuliah_id');	
     }
+
+    public function getNamaAttribute()
+    {
+        return $this->dosen->nama;    
+    }
+
+    public function getNipAttribute()
+    {
+        return $this->dosen->nip;    
+    }
+
+    public function getTitleMatkulAttribute()
+    {
+        return $this->matakuliah->title;    
+    }
+
+    public function listDosenDanMatakuliah()
+    {
+        $out=[];
+        foreach ($this->all() as $dsnMtk) {
+            # code...
+            $out[$dsnMtk->id]="{dsnMtk->dosen->nama} {dsnMtk-dosen->nip} (Matakuliah{$dsnMtk->matakuliah->title})";
+        }
+        return $out;
+    }
 }
  

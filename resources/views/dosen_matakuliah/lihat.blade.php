@@ -23,7 +23,7 @@
 		<tr>
 			<td class="col-xs-4">Diperbarui Tanggal</td>
 			<td class="col-xs-1">:</td>
-			<td>{{$dosen_matakuliah->update_at}}</td>
+			<td>{{$dosen_matakuliah->updated_at}}</td>
 		</tr>
 	</table>
 </div>
